@@ -40,9 +40,8 @@ deploy:
         name: npm run build
         code: |
           npm run build
-          ls -la dist/
+          ls -la
     - wercker-labs/azure-ftp-deploy:
         publish-url: ftp://waws-prod-sn1-065.ftp.azurewebsites.windows.net/site/wwwroot
         username: ashiras\ashiras
         password: $AZURE_PASSWORD
-        
