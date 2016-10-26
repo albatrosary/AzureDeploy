@@ -36,6 +36,7 @@ build:
           echo "npm version $(npm -v) running"
 deploy:
   steps:
+    - npm-install
     - script:
         name: npm run build
         code: |
