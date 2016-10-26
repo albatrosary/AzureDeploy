@@ -40,3 +40,4 @@ deploy:
         name: npm run build
         code: |
           npm run build
+          ls -la dist/
