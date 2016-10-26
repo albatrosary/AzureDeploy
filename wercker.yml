@@ -35,5 +35,10 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
 deploy:
-    steps:
-      - npm-build
+  steps:
+    - npm-build
+    - script:
+        name: echo nodejs information
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"
