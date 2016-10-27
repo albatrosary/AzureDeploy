@@ -40,5 +40,6 @@ deploy:
     - script:
         name: npm run build
         code: |
+          mkdir hoge
           npm run build
           ls
