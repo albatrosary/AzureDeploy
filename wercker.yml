@@ -40,4 +40,4 @@ deploy:
     - script:
         name: npm run build
         code: |
-          sudo npm run build
+          npm run build
