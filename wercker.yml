@@ -39,7 +39,7 @@ deploy:
     - script:
         name: install angular-cli
         code: |
-          sudo npm install -g angular-cli
+          npm install -g angular-cli
     - script:
         name: ng build
         code: |
