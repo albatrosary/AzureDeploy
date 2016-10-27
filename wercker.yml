@@ -44,4 +44,4 @@ deploy:
         name: ng build
         code: |
           ng build
-          ls
+          ls -l node_modules/.bin/ng
