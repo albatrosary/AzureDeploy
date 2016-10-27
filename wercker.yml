@@ -36,10 +36,12 @@ build:
           echo "npm version $(npm -v) running"
 deploy:
   steps:
-    - npm-install
     - script:
-        name: npm run build
+        name: install angular-cli
         code: |
-          mkdir hoge
-          npm run build
+          sudo npm install -g angular-cli
+    - script:
+        name: ng build
+        code: |
+          ng build
           ls
