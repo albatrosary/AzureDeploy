@@ -44,4 +44,8 @@ deploy:
         name: ng build
         code: |
           ng build
-          ls -l node_modules/.bin/ng
+    # lftp -u "ashiras\ashiras","Ashiras1234" -e "mirror -Rev dist/. /site/wwwroot/." waws-prod-sn1-065.ftp.azurewebsites.windows.net
+    - script:
+        name: azure ftp deploy
+        code: |
+          lftp -u ${FTP_USERNAME}, ${FTP_PASSWORD} -e "mirror -Rev -X wercker.yml dist/. /site/wwwroot/." ${FTP_SERVER_URL}
