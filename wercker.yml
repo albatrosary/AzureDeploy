@@ -43,7 +43,7 @@ deploy:
     - script:
         name: ng build
         code: |
-          ng build
+          ng build --aot true
     - install-packages:
         packages: lftp
     # lftp -u "ashiras\ashiras","Ashiras1234" -e "mirror -Rev dist/. /site/wwwroot/." waws-prod-sn1-065.ftp.azurewebsites.windows.net
