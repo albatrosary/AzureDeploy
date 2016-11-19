@@ -51,4 +51,4 @@ deploy:
         name: azure ftp deploy
         code: |
         code: |
-          lftp -u ${FTP_USERNAME}, ${FTP_PASSWORD} -e "mirror -Rev -X wercker.yml dist/. /site/wwwroot/." ${FTP_SERVER_URL}
+          lftp -u ${FTP_USERNAME},${FTP_PASSWORD} -e "mirror -Rev -X wercker.yml dist/. /site/wwwroot/." ${FTP_SERVER_URL}
