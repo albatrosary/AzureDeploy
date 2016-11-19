@@ -21,13 +21,13 @@ describe('App: AzureDeploy', () => {
   it(`should have as title 'Angular2'`, async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     let app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Angular2');
+    expect(app.title).toEqual('Angular');
   }));
 
   it('should render title in a h1 tag', async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Angular2');
+    expect(compiled.querySelector('h1').textContent).toContain('Angular');
   }));
 });
